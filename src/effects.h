@@ -86,5 +86,6 @@
   EFFECT(tremolo)
   EFFECT(trim)
   EFFECT(upsample)
+  EFFECT(maxenvelope)
   EFFECT(vad)
   EFFECT(vol)

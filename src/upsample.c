@@ -43,6 +43,8 @@ static int flow(sox_effect_t * effp, const sox_sample_t * ibuf,
 {
   priv_t * p = (priv_t *)effp->priv;
   size_t ilen = *isamp, olen = *osamp;
+  printf("Got data!. Input length: %li, output length: %li\n", *isamp, *osamp);
+
   while (sox_true) {
     for (; p->pos && olen; p->pos = (p->pos + 1) % p->factor, --olen)
       *obuf++ = 0;
