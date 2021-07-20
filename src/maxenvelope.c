@@ -35,7 +35,7 @@ static int create(sox_effect_t * effp, int argc, char * * argv)
 
 static int start(sox_effect_t * effp)
 {
-  priv_t * p = (priv_t *) effp->priv;
+  //priv_t * p = (priv_t *) effp->priv;
   effp->out_signal.rate = effp->in_signal.rate  ;/// p->window_size;
   return SOX_SUCCESS;
 }
